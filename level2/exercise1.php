@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
- function totalImport($minute) {
+ function totalImport(int $minute) : int {
     $callCost=10;
     $addMinute=5;
 
