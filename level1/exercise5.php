@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-function checkGrade($grade) {
+function checkGrade(int $grade) : string {
     $answer="";
 
 

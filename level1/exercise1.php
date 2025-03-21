@@ -8,11 +8,11 @@ $boolean = false;
 $_NAME= "Alex";
 
 
-echo $int . "<br>" . $float ."<br>" . $string ."<br>" ;
+echo $int . PHP_EOL . $float .PHP_EOL . $string . PHP_EOL ;
 
 var_dump($boolean);
 
-echo"<br>"; 
+echo PHP_EOL; 
 
 
 echo "<h1>$_NAME</h1>";
