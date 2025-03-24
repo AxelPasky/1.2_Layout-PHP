@@ -1,25 +1,28 @@
 <?php
 declare(strict_types = 1);
+const costChocolate=1;
+const costGum=0.5;
+const costCandy= 1.5;
 
-function chocolate(int $numChocolate):int{
-    $cost=1;
+function totalCostChocolate(int $numChocolate):int{
+    
 
-    return $numChocolate*$cost;
+    return $numChocolate*costChocolate;
 
 }
 
-function gum(int $numGum):int{
-    $cost=0.5;
+function totalCostGum(int $numGum):float{
+    
 
-    return $numGum*$cost;
+    return $numGum*costGum;
 }
 
-function candy(int $numCandy):int{
-    $cost=1.5;
+function totalCostCandy(int $numCandy):float{
+    
 
-    return $numCandy*$cost;
+    return $numCandy*costCandy;
 }
 
-echo "The total cost is : " . chocolate(2) + gum(1) + candy(1);
+echo "The total cost is : " . totalCostChocolate(2) + totalCostGum(1) + totalCostCandy(1);
 
 ?>

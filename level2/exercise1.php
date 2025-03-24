@@ -1,15 +1,15 @@
 <?php
 declare(strict_types = 1);
+const callCost=10;
+const addMinute=5;
 
  function totalImport(int $minute) : int {
-    $callCost=10;
-    $addMinute=5;
-
+    
     if ($minute<=3) {
-       return $callCost;
+       return callCost;
     } else {
        $minuteLeft= $minute-3;
-       $totalCost=$minuteLeft*$addMinute+$callCost;
+       $totalCost=$minuteLeft*addMinute + callCost;
        return $totalCost;
     }
  }
