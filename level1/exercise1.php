@@ -5,7 +5,7 @@ $int=17;
 $float = 2.5;
 $string = "Hello";
 $boolean = false;
-$_NAME= "Alex";
+const NAME = "Alex";
 
 
 echo $int . PHP_EOL . $float .PHP_EOL . $string . PHP_EOL ;
@@ -15,7 +15,7 @@ var_dump($boolean);
 echo PHP_EOL; 
 
 
-echo "<h1>$_NAME</h1>";
+echo "<h1>NAME</h1>";
 ?>
 
 

@@ -30,7 +30,7 @@ echo PHP_EOL;
 echo "The sum of all variables is :" . $X+$Y+$N+$M . PHP_EOL; 
 echo "The product of all variables is :" . $X*$Y*$N*$M . PHP_EOL;
 
-function calculator($num1,$num2,$operator){
+function calculator(int $num1, int $num2, string $operator): mixed {
 
     if ($operator== "+"){
         $total= $num1 + $num2;
@@ -39,7 +39,11 @@ function calculator($num1,$num2,$operator){
     } elseif ($operator== "*") {
         $total= $num1 * $num2;
     } elseif ($operator== "/") {
+        if ($num2 == 0){
+            $total = "Error. It's infinite.";
+        } else {
         $total= $num1/$num2;
+        }
     } else {
         $total= "This value is not correct. Use + , - , * , / .";
     }
